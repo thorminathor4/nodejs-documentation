@@ -33,5 +33,4 @@ router.get('/server-side-redirection', (req, res) => res.send(expressPages.serve
 router.get('/REST-API', (req, res) => res.send(otherPages.REST_API));
 router.get('/node-vs-browser', (req, res) => res.send(otherPages.nodeVsBrowser));
 
-console.log("Importing Router");
 module.exports = router;

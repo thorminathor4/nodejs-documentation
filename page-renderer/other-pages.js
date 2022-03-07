@@ -21,7 +21,6 @@ const nodeVsBrowser = pageRenderer.renderPage(pageTemplate, {
     CONTENT: '/bonus/node-vs-browser.html'
 });
 
-console.log('Importing Page Builder');
 module.exports = {
     frontpage,
     REST_API,
