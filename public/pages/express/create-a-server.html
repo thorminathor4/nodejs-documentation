@@ -46,7 +46,18 @@
                     <span class="aqua">PORT</span>
                     <span class="white">=</span>
                     <span class="army">3000</span><span class="white">;</span>
-                </p>
+                </p><br>
+                You can also allow for a costom port to be set from an environment variable.<br>
+                (Here the "PORT" will be initialized to the environment variable "PORT" if provided and 3000 if not provided):<br>
+                <p class="codeblock">
+                    <span class="blue">const</span>
+                    <span class="aqua">PORT</span>
+                    <span class="white">=</span>
+                    <span class="sky">process</span><span class="white">.</span><span class="sky">env</span><span class="white">.</span><span class="aqua">PORT</span>
+                    <span class="white">||</span>
+                    <span class="army">3000</span><span class="white">;</span>
+                </p><br>
+                Read more about environment variables here: <a href="use-environment-variables">Use Environment Variables</a>.
             </li>
             <li>
                 Use the listen method on the server object to start the server on the port:<br>
