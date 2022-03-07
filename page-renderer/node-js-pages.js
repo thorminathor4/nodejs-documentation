@@ -41,11 +41,18 @@ const useEnvironmentVariables = pageRenderer.renderPage(pageTemplate, {
     CONTENT: '/use-environment-variables.html'
 });
 
+const crossEnvironment = pageRenderer.renderPage(pageTemplate, {
+    TITLE: 'Cross Environment - Node.js',
+    STYLES: nodeJsStyles,
+    CONTENT: '/cross-environment.html'
+});
+
 module.exports = {
     basicsOfNodeJs,
     importingExportingModules,
     fileSystem,
     npmAndProjects,
     nodemon,
-    useEnvironmentVariables
+    useEnvironmentVariables,
+    crossEnvironment
 }

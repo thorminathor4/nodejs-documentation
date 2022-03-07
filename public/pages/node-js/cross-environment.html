@@ -1,0 +1,24 @@
+<div class="top">
+    <img src="/node-logo.png" width="50px"/>
+    <h1 class="page-title">Node.js - Cross Environment</h1>
+</div>
+<p>
+    The "cross-env" module provides the ability to run platform specific commands across all platforms.<br>
+</p>
+
+<h3>Install Cross-Env</h3>
+See how to install modules here: <a href="/npm-and-projects">NPM & Projects</a>.
+
+<h3>Use Cross-Env</h3>
+When you have installend Cross-Env, you can execute a command from another platform.<br>
+This is done by making a script in the package of a project, where "cross-env" is prepended to the command of the script<br>
+(Here the script "start" uses "cross-env" to run the command following "cross-env"):<br>
+<p class="codeblock">
+    <span class="sky">"scripts"</span><span class="white">:</span>
+        <span class="white">{</span><br>
+    &nbsp;&nbsp;<span class="sky">"start"</span><span class="white">:</span>
+    <span class="red">"cross-env PORT=3000 node app.js"</span><br>
+    <span class="white">}</span>
+</p><br>
+The script above sets an environment variable. Read more about that here:
+<a href="/use-environment-variables">Use Environment Variables</a>.
