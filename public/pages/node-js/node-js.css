@@ -1,0 +1,35 @@
+.page-title{
+    display: inline-block;
+    margin-left: 1%;
+    vertical-align: bottom;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h2{
+    margin-bottom: 1%;
+}
+h3{
+    margin-bottom: 0;
+}
+li{
+    padding-top: 15px;
+}
+ol{
+    padding-top: 5px;
+    margin-top: 0;
+}
+p {
+    margin-bottom: 0;
+}
+ul{
+    margin: 0;
+}
+ul li{
+    padding: 0;
+}
+li ol{
+    padding-top: 0;
+}
+li ol li{
+    padding: 0;
+}

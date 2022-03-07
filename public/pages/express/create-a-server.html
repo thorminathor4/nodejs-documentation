@@ -1,0 +1,86 @@
+<h1>Express - Create a Server</h1>
+<p>
+    This is a guide on how to make an express server.<br>
+    To access a server there must be routes that can be accessed via endpoints.<br>
+    To see how to make routes that can send back web-pages and other data, go to this guide:
+    <a href="/create-a-route">Create a Route</a>.
+</p>
+<ol>
+    <li>Make a folder for the project</li>
+    <li>
+        Install the "express" module. See how to install modules here:
+        <a href="/npm-and-projects">NPM & Projects</a>.
+    </li>
+    <li>
+        Create the file "app.js" in the project folder and create the server by writing the following in "app.js":
+        <ol>
+            <li>
+                Import the "express" module and assgn the recieved object to a variable you with the name "express".<br>
+                See how to import modules here:
+                <a href="/importing-exporting-modules">Importing & Exporting Modules</a>.
+            </li>
+            <li>
+                Create the server object with the name "app":<br>
+                <p class="codeblock">
+                    <span class="blue">const</span>
+                    <span class="aqua">app</span>
+                    <span class="white">=</span>
+                    <span class="beige">express</span><span class="white">();</span>
+                </p>
+            </li>
+            <li>
+                This is where you should one or both of the following:
+                <ul>
+                    <li>Define routes by using methods on the server object.</li>
+                    <li>Import a router/routers and use it/them on the server object.</li>
+                </ul>
+                To see how to make routes that can send back web-pages and other data, go to this guide:
+                <a href="/create-a-route">Create a Route</a>.<br>
+                To see how to make a router, go to this guide:
+                <a href="/router">Router</a>.
+            </li>
+            <li>
+                Define the port where: 0 ≤ PORT ≤ 65535 (Recommended ports for development are 3000, 5000 or 9000):<br>
+                <p class="codeblock">
+                    <span class="blue">const</span>
+                    <span class="aqua">PORT</span>
+                    <span class="white">=</span>
+                    <span class="army">3000</span><span class="white">;</span>
+                </p>
+            </li>
+            <li>
+                Use the listen method on the server object to start the server on the port:<br>
+                <p class="codeblock">
+                    <span class="aqua">app</span><span class="white">.</span><span class="beige">listen</span><span class="white">(</span><span class="aqua">PORT</span><span class="white"></span>);</span>
+                </p>
+                <br>
+                You can also define a callback that is called when the server starts:<br>
+                <p class="codeblock">
+                    <span class="aqua">app</span><span class="white">.</span><span class="beige">listen</span><span class="white">(</span><span class="aqua">PORT</span><span class="white">,</span>
+                        <span class="white">()</span>
+                        <span class="blue">=></span> <span class="white">{</span><br>
+                    &nbsp;&nbsp;&nbsp;
+                    <span class="sky">console</span><span class="white">.</span><span class="beige">log</span><span class="white">(</span><span class="red">"Server started on port:"</span><span class="white">,</span>
+                    <span class="aqua">PORT</span><span class="white">);</span><br>
+                    <span class="white">});</span>
+                </p>
+            </li>
+        </ol>
+    </li>
+</ol>
+<br>
+You can start the server by executing the file "app.js" that you just made.<br>
+See how to execute a file here:
+<a href="/basics-of-nodejs">Basics of Node.js</a>.<br>
+<br>
+The domain of the server will be "IP:PORT" where:
+<ul>
+    <li>IP = The IP-Address of the hosting computer</li>
+    <li>PORT = The port of the server</li>
+</ul>
+On the computer hosting the server, you can just use "127.0.0.1" or "localhost" instead of the IP-Address.<br>
+<br>
+To see how to make routes that can send back web-pages and other data, go to this guide:
+<a href="/create-a-route">Create a Route</a>.<br>
+To see how to make a router, go to this guide:
+<a href="/router">Router</a>.

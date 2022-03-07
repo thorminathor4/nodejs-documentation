@@ -1,0 +1,39 @@
+<h1>Express - Router</h1>
+<p>
+    Instead of defining every route on a server by using a method on the server object, you can make a router and use it on the server.<br>
+    To see how to make an express server, go to this guide: <a href="/create-a-server">Create a Server</a>.<br>
+    See how to make routes here: <a href="/create-a-route">Create a Route</a>.<br>
+    A router has the same methods for defining routes as the server object.<br>
+</p>
+This is a guide on how to make a router and use it on the server.<br>
+<ol>
+    <li>
+        It is a good idea to make a router in a module.<br>
+        See more about modules here:
+        <a href="/importing-exporting-modules">Importing & Exporting Modules</a>.<br>
+        If you make the router in a module you can:
+        <ul>
+            <li>Export just the router object, so you get the router object directly when you import the module.</li>
+            <li>Export an object with the router object as a property, so you can get the router from that property of the object you get, when you import the module.</li>
+        </ul>
+    </li>
+    <li>
+        Make a new router object by using the Router method on the express module object.<br>
+        <p class="codeblock">
+            <span class="blue">const</span>
+            <span class="aqua">router</span>
+            <span class="white">=</span>
+            <span class="beige">express</span><span class="white">.</span><span class="beige">Router</span><span class="white">();</span>
+        </p>
+    </li>
+    <li>
+        Make one or more routes. See how to make routes here: <a href="/create-a-route">Create a Route</a>.
+    </li>
+    <li>
+        Use the router on the server by using the use method tn the server object and giving it the router object as parameter:<br>
+        <p class="codeblock">
+            <span class="aqua">app</span><span class="white">.</span><span class="beige">use</span><span class="white">(</span><span class="aqua">router</span><span class="white">);</span>
+        </p><br>
+        When the server uses a router, the server has all the routes that the router has.
+    </li>
+</ol>

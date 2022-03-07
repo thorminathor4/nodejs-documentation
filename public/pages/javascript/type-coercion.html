@@ -1,0 +1,35 @@
+<div>
+    <img src="/javascript-logo.svg" width="50px">
+    <h1 class="page-title">JavaScript - Type Coercion</h1>
+</div>
+<p>
+    Type coercion is when values are converted automatically.<br>
+    Coercion happens in specific cases using certain operation.<br>
+    (There is not an explantion for when and how each operation coerces the values, because that requires a considerably long explanation).
+</p>
+<br>
+To avoid coercion, do the following:
+<ul>
+    <li>Convert values explicitly</li>
+    <li>Avoid using operations that can coerce values if possible</li>
+</ul>
+<h2>Non Coercing Operators</h2>
+<h3>Strict (in)equality (===, !==)</h3>
+<h2>Coercing Operators</h2>
+Below are some operations that can coerce values:
+<h3>Concationation (+)</h3>
+The + operator can coerce values into strings and concatenate them.
+<h3>Addition (+)</h3>
+The + operator can coerce values into numbers (or *NaN) and add them.
+<h3>Math operators (-, *, /, %)</h3>
+Math operators can coerce values into numbers to perform the math operation.
+<h3>Loose (in)equality (==, !=)</h3>
+The loose (in)equality operator can coerce values which allows for loose (in)equality, which means:
+<ul>
+    <li>Matching types is not required for loose equality.</li>
+    <li>Non matching types does not always result in loose inequality.</li>
+</ul>
+<h3>Relational operators (&gt;, &gt;=, &lt;, &lt;=)</h3>
+Relational operators can coerce values into numbers (or *NaN) and compare them.<br>
+<br>
+*NaN means "Not a Number", but is actually has the type Number.

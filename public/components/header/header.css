@@ -1,0 +1,17 @@
+.header-text{
+    display: inline-block;
+    vertical-align: top;
+    width: 60%;
+    margin-left: 2%;
+}
+.title {
+    display: inline;
+}
+.title-text{
+    color: #55AA55;
+    text-decoration: none;
+    cursor: pointer;
+}
+.message{
+    color: gray;
+}

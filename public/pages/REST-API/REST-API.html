@@ -1,0 +1,65 @@
+<h1>REST API</h1>
+<p>
+    A REST API is a Web API that support CRUD operations for a ressource type.<br>
+    REST is an abbreviation for Representational State Transfer.<br>
+    A REST API has a state which it can transfer representations of.<br>
+    A client can request a repressentation of the state, that a REST API is in, so it transfers the repressentation to the client.<br>
+    A client can also transfer a repressentation of a state to the server, it wants the REST API to be in.<br>
+    CRUD operations are the following operations: Create, Read, Update and Delete.<br>
+</p>
+A REST API should meet the following requirements:
+<ul>
+    <li>The ressource type should be a noun.</li>
+    <li>The endpoints should use the ressource type as a plural noun.</li>
+    <li>Each ressource should have a unique id.</li>
+    <li>A unique id should be assigned to each ressource upon creation.</li>
+    <li>The id's of the ressources should never be changed.</li>
+</ul>
+The table below shows the following:
+<ul>
+    <li>Which operations the REST API should be able to perform.</li>
+    <li>Which HTTP method maps to which CRUD operation.</li>
+    <li>What the endpoint of each operation should be.<br>
+        (id should be a path variable).
+    </li>
+</ul>
+<p>(This is how a REST API for users should be defined):</p>
+<table>
+    <thead>
+        <th>Method</th>
+        <th>Endoint</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GET</td>
+            <td>/users</td>
+            <td>Reads all users</td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td>/users/id</td>
+            <td>Reads one user by id</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/users</td>
+            <td>Creates one user</td>
+        </tr>
+        <tr>
+            <td>PUT</td>
+            <td>/users/id</td>
+            <td>Updates one user completely by id</td>
+        </tr>
+        <tr>
+            <td>PATCH</td>
+            <td>/users/id</td>
+            <td>Updates one user partially by id</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>/users/id</td>
+            <td>Deletes one user by id</td>
+        </tr>
+    </tbody>
+</table>

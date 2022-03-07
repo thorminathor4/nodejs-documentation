@@ -1,0 +1,85 @@
+<h1>Express - Create a Route</h1>
+<p>
+    This is a guide on how to make routes for an express server or router.<br>
+    To see how to make an express server, go to this guide: <a href="/create-a-server">Create a Server</a>.<br>
+    To see how to make an express router, go to this guide: <a href="/router">Router</a>.<br>
+    The endpoint of a route will be the domain followed by the path.<br>
+    For example the endpoint could be: "localhost:3000/about" where:<br>
+    <ul>
+        <li>"localhost:3000" is the domain</li>
+        <li>"/about" is the path</li>
+    </ul>
+    When you go to a web-page, the HTTP get-method is used.
+</p>
+Here is the guide on, how to make a route:
+<ol>
+    <li>
+        Use the a method on the server (or router) object to define a route for that HTTP method<br>
+        (Here the get method is used on the server object "app", to make a route for an HTTP get-method):<br>
+        <p class="codeblock">
+            <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">();</span>
+        </p><br>
+        (Server and router objects has methods for several HTTP methods such as: get, post, put, patch and delete).<br>
+    </li>
+    <li>
+        Define the the path for the route by adding it as the first argument<br>
+        (In this case the the root path "/". You can request on the root path, by not writing an endpoint):<br>
+        <p class="codeblock">
+            <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">(</span><span class="red">"/"</span><span class="white">);</span>
+        </p>
+    </li>
+    <li>
+        Add a callback as the second argument.<br>
+        The callback should recieve the HTTP request object "req" and the HTTP response object "res" as arguments:<br>
+        <p class="codeblock">
+            <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">(</span><span class="red">"/"</span><span class="white">,</span>
+                <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
+                <span class="sky">res</span><span class="white">)</span>
+                <span class="blue">=></span> <span class="white">{</span><br><br>
+            <span class="white">});</span>
+        </p>
+    </li>
+    <li>
+        Send something in the response by using a method on the response object:<br>
+        <ul>
+            <li>
+                To see how to send a file (fx. a web-page aka. an HTML file), go to this guide:
+                <a href="/send-a-file">Send a File</a>.<br>
+            </li>
+            <li>
+                You can also send basically anything with the send method.<br>
+                You can send a String:<br>
+                <p class="codeblock">
+                    <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">(</span><span class="red">"/"</span><span class="white">,</span>
+                        <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
+                        <span class="sky">res</span><span class="white">)</span>
+                        <span class="blue">=></span> <span class="white">{</span><br>
+                    &nbsp;&nbsp;&nbsp;
+                    <span class="sky">res</span><span class="white">.</span><span class="beige">send</span><span class="white">(</span><span class="red">"Hello Express!"</span><span class="white">);</span><br>
+                    <span class="white">});</span>
+                </p>
+                <br>
+                You can also send an object:<br>
+                <p class="codeblock">
+                    <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">(</span><span class="red">"/"</span><span class="white">,</span>
+                        <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
+                        <span class="sky">res</span><span class="white">)</span>
+                        <span class="blue">=></span> <span class="white">{</span><br>
+                    &nbsp;&nbsp;&nbsp;
+                    <span class="sky">res</span><span class="white">.</span><span class="beige">send</span><span class="white">({</span><span class="sky">name</span><span class="white">:</span>
+                    <span class="red">"James Smith"</span><span class="white">,</span>
+                    <span class="sky">age</span><span class="white">:</span>
+                    <span class="army">22</span><span class="white">});</span>
+                    <br>
+                    <span class="white">});</span>
+                </p>
+            </li>
+        </ul>
+    </li>
+</ol>
+<p>
+    If you made a route for a get method on the server, you can now use your browser to get what the server sends, by going to the url of the route.<br>
+    If you made a route for a get method on the router, you you can do the same if you use the router on the sever.<br>
+    See how to use a router on a server here: <a href="/router">Router</a>.<br>
+    (If you used the root path for the route, the endpoint of the route is just the domain of the server fx. "localhost:3000").
+</p>

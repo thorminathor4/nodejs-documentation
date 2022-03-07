@@ -1,0 +1,38 @@
+<h1>Express - Use Query String</h1>
+<p>
+    You can include a query string in a url.<br>
+    This is done by writing a question mark after the path.<br>
+    Then one or more keys followed by an equals sign and a value can be written, seperated by an ampersand fx. "/users?name=John&age=22"<br>
+    That query string then contain the following:
+    <ul>
+        <li>The key "name" with the value "John"</li>
+        <li>The key "age" with the value "22"</li>
+    </ul>
+    <br>
+    Here is how to use the query string:
+</p>
+The key(s) of the query string will be properties of the query object inside the request object.<br>
+The keys will have their value specified in the query string.<br>
+(Here we declare a variable "name" to be the the path varaiable "name", by assigning it to the name property):<br>
+<p class="codeblock">
+    <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">(</span><span class="red">"/users"</span><span class="white">,</span>
+        <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
+        <span class="sky">res</span><span class="white">)</span>
+        <span class="blue">=></span> <span class="white">{</span><br>
+    &nbsp;&nbsp;&nbsp;
+        <span class="blue">const</span> <span class="aqua">name</span> <span class="white">=</span>
+        <span class="sky">req</span><span class="white">.</span><span class="sky">query</span><span class="white">.</span><span class="sky">name</span><span class="white">;</span><br>
+    <span class="white">});</span>
+</p><br>
+The value(s) in the query string will be a string/strings, so if another type is needed, it/they must be converted.<br>
+(Here the value of the key "age" is converted to a number):<br>
+<p class="codeblock">
+    <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">(</span><span class="red">"/users"</span><span class="white">,</span>
+        <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
+        <span class="sky">res</span><span class="white">)</span>
+        <span class="blue">=></span> <span class="white">{</span><br>
+    &nbsp;&nbsp;&nbsp;
+        <span class="blue">const</span> <span class="aqua">age</span> <span class="white">=</span>
+        <span class="green">Number</span><span class="white">(</span><span class="sky">req</span><span class="white">.</span><span class="sky">query</span><span class="white">.</span><span class="sky">age</span><span class="white">);</span><br>
+    <span class="white">});</span>
+</p>

@@ -1,0 +1,50 @@
+<h1>Express - Use Path Variable</h1>
+<p>
+    You can include a path variable in the path of a route.<br>
+    The path consist of zero or more path segments seperated by slashes fx. "/users/1".<br>
+    You can define a path to include one or more path variables.<br>
+    This is done by specifying one or more of the segments as a path variable.<br>
+    In express you can define a path variable in a path by writing colon followed by the variable name in the path fx "/users/:id".<br>
+    The path "/users/:id" has one path variable with the name "id".<br>
+    <br>
+    Here is a guide how to use a path variable:
+</p>
+<ol>
+    <li>
+        Define the a path with one or more path variables for the route.<br>
+        (Here a path for a get method is defined with one path variable called "id"):<br>
+        <p class="codeblock">
+            <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">(</span><span class="red">"/users/:id"</span><span class="white">,</span>
+                <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
+                <span class="sky">res</span><span class="white">)</span>
+                <span class="blue">=></span> <span class="white">{</span><br><br>
+            <span class="white">});</span>
+        </p>
+    </li>
+    <li>
+        The path variable(s) will be properties of the params object inside the request object.<br>
+        (Here we declare a variable "id" to be the the path varaiable "id", by assigning it to the id property):<br>
+        <p class="codeblock">
+            <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">(</span><span class="red">"/users/:id"</span><span class="white">,</span>
+                <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
+                <span class="sky">res</span><span class="white">)</span>
+                <span class="blue">=></span> <span class="white">{</span><br>
+            &nbsp;&nbsp;&nbsp;
+                <span class="blue">const</span> <span class="aqua">id</span> <span class="white">=</span>
+                <span class="sky">req</span><span class="white">.</span><span class="sky">params</span><span class="white">.</span><span class="sky">id</span><span class="white">;</span><br>
+            <span class="white">});</span>
+        </p><br>
+        The path variable(s) will be a string/strings, so if another type is needed, it/they must be converted.<br>
+        (Here the the path variable "id" is converted to a number):<br>
+        <p class="codeblock">
+            <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">(</span><span class="red">"/users/:id"</span><span class="white">,</span>
+                <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
+                <span class="sky">res</span><span class="white">)</span>
+                <span class="blue">=></span> <span class="white">{</span><br>
+            &nbsp;&nbsp;&nbsp;
+                <span class="blue">const</span> <span class="aqua">id</span> <span class="white">=</span>
+                <span class="green">Number</span><span class="white">(</span><span class="sky">req</span><span class="white">.</span><span class="sky">params</span><span class="white">.</span><span class="sky">id</span><span class="white">);</span><br>
+            <span class="white">});</span>
+        </p>
+    </li>
+</ol>

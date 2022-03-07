@@ -1,0 +1,43 @@
+<div>
+    <img src="/javascript-logo.svg" width="50px">
+    <h1 class="page-title">JavaScript - Functional Iteration</h1>
+</div>
+<p>
+    It is good practice to iterate through an array, with its built in functions.<br>
+    It is bad practice to iterate through an array, with a for, for-each or while loop.<br>
+    Below are some functions you can use, to iterate through an array.<br>
+    All of the function take a callback as parameter.
+</p>
+<h3 class="code-header beige"><span class="beige">forEach</span><span class="white">(</span><span class="beige">callback</span><span class="white">)</span></h3>
+Used to perform something for/with every element in an array.<br>
+The callback is executed for every element in the array<br>
+The callback is given the elemnent as a parameter.<br>
+The function returns undefined.
+
+<h3 class="code-header beige"><span class="beige">map</span><span class="white">(</span><span class="beige">callback</span><span class="white">)</span></h3>
+Used to map each value in an array to a different value.<br>
+The callback is executed for every element in the array.<br>
+The callback is given the elemnent as a parameter.<br>
+The callback should return the new value for the element.<br>
+The function returns an array with the mapped values.
+
+<h3 class="code-header beige"><span class="beige">filter</span><span class="white">(</span><span class="beige">callback</span><span class="white">)</span></h3>
+Used to filter elements out of an array.<br>
+The callback is executed for every element in the array.<br>
+The callback is given the elemnent as a parameter.<br>
+The callback should return a boolean value that decides if the element should stay in the array.<br>
+The function returns an array without the elemnts, that have been filtered out.
+
+<h3 class="code-header beige"><span class="beige">find</span><span class="white">(</span><span class="beige">callback</span><span class="white">)</span></h3>
+Used to find an element for which a condition is met.<br>
+The callback is executed for every element or until the condition is met.<br>
+The callback is given the elemnent as a parameter.<br>
+The callback should return a boolean value that decides if the condition is met.<br>
+The function returns the first element for which the condition is met.
+
+<h3 class="code-header"><span class="beige">findIndex</span><span class="white">(</span><span class="beige">callback</span><span class="white">)</span></h3>
+Used to find the index of an element for which a condition is met.<br>
+The callback is executed for every element or until the condition is met.<br>
+The callback is given the elemnent as a parameter.<br>
+The callback should return a boolean value that decides if the condition is met.<br>
+The function returns index of the first element for which the condition is met.

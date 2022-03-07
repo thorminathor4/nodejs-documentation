@@ -1,0 +1,43 @@
+<div>
+   <img src="/javascript-logo.svg" width="50px">
+   <h1 class="page-title">JavaScript - Variable Declaration</h1>
+</div>
+<p>
+    In JavaScript there are different ways to declare a variable.<br>
+    Here are some differences between declaring variables using the three keywords.
+</p>
+<h2 class="code-header aqua">const</h2>
+<p>
+    Declares and defines a block-scoped variable, that must be initialized when declared and can not be reassigned.<br>
+    If the variable is initialized to an object/array, the properties/values inside the object/array can be manipulated including reassignment.<br>
+    Using the variable before it's initialisation will throw a ReffernceError.<br>
+    When declared in an inner scope, with the same name as a variable in the outer scope, the variable from the outer scope can not be accessed in that inner scope.<br>
+    Should always be used, when reassignment is not nessesary.
+</p>
+<h2 class="code-header aqua">let</h2>
+<p>
+    Declares and defines a block-scoped variable, that can be reassigned and where no initialization is required.<br>
+    If declared without initialisation, its value will be initialized to undefined until assigned to another value.<br>
+    Using the variable before it's initialisation will throw a ReffernceError.<br>
+    When declared in an inner scope, with the same name as a variable in the outer scope, the variable from the outer scope can not be accessed in that inner scope.<br>
+    Should only be used, when either:
+    <ul>
+        <li>It can not be initialized when it is declared.</li>
+        <li>Reassignment is nessesary.</li>
+    </ul>
+</p>
+<h2 class="code-header aqua">var</h2>
+<p>
+    AVOID USING THIS!<br>
+    Declares a hoisted variable, that can be reassigned with it's where no initialization is required.<br>
+    Hoisting means the variable is declared and initialized to undefinded in the start of it's scope.<br>
+    When used inside a function, it declares a local variable scoped to the function.<br>
+    If not declared inside a function, it declares a global variable.<br>
+    When declared in a function, with the variable name being the same as a global variable, the global variable can not be accessed in that function.<br> 
+    It also permits redeclaration of variables.<br>
+</p>
+<br>
+<p>
+    You can also declare non hoisted global variables by initializing them without a keyword.<br>
+    This is only possible, if the variable is not already defined.
+</p>

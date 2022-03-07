@@ -1,0 +1,33 @@
+.page-content table{
+    width: 100%;
+}
+.page-content td{
+    vertical-align: top;
+    width: 25%;
+}
+h2{
+    display: inline;
+}
+.page-content a{
+    text-decoration: none;
+    color: white;
+}
+.page-content a:hover{
+    background-color: #55AA55;
+}
+li{
+    padding: 2px;
+    color: gray;
+    cursor: pointer;
+}
+.group{
+    color: white;
+    cursor: default;
+}
+.other{
+    margin-top: 0;
+}
+.other li{
+    list-style-type: none;
+    margin-bottom: 5%;
+}

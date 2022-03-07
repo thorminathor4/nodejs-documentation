@@ -1,0 +1,33 @@
+<div class="top">
+    <img src="/node-logo.png" width="50px"/>
+    <h1 class="page-title">Node.js - File System</h1>
+</div>
+<p>
+    In Node.js you can interact with the file system on the computer, using the a module called "fs".<br>
+    This is how you import the "fs" module:
+    <p class="codeblock">
+        <span class="blue">const</span>
+        <span class="green">fs</span>
+        <span class="white">=</span>
+        <span class="beige">require</span><span class="white">(</span><span class="red">"fs"</span><span class="white">);</span>
+    </p>
+    <h2>Read File</h2>
+    To read a file synchronously, you can use the readFileSync method and give it the file path as a string<br>
+    (Here the file "file.txt" is read into the variable "file"):<br>
+    <p class="codeblock">
+        <span class="blue">const</span>
+        <span class="aqua">file</span>
+        <span class="white">=</span>
+        <span class="green">fs</span><span class="white">.</span><span class="beige">readFileSync</span><span class="white">(</span><span class="red">"./file.txt"</span><span class="white">);</span>
+    </p><br>
+    <br>
+    The readFileSync method returns a Buffer object representing the bytes in the file.<br>
+    If the file contains text format data, the buffer can be converted to a string.<br>
+    (File extentions that contain text fortmat data include: txt, html, css, svg, xml, json, js, java, c, cpp, cs):<br>
+    <p class="codeblock">
+        <span class="blue">const</span>
+        <span class="aqua">file</span>
+        <span class="white">=</span>
+        <span class="green">fs</span><span class="white">.</span><span class="beige">readFileSync</span><span class="white">(</span><span class="red">"./file.txt"</span><span class="white">).</span><span class="beige">toString</span><span class="white">();</span>
+    </p>
+</p>

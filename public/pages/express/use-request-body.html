@@ -1,0 +1,41 @@
+<h1>Express - Use Request Body</h1>
+<p>
+    You can have a body in an HTTP request.<br>
+    In Express the request body will by default be repressented as a Buffer of the bytes inside the body.<br>
+    You can make an express server convert/parse all the request bodies it recieves into another format.<br>
+</p><br>
+This is a giude on, how to use the request body:
+<ol>
+    <li>
+        Make the express server parse the request bodies as *JSON (convert them from *JSON to objects) with this method:<br>
+        <p class="codeblock">
+            <span class="aqua">app</span><span class="white">.</span><span class="beige">use</span><span class="white">(</span><span class="beige">express</span><span class="white">.</span><span class="beige">json</span><span class="white">());</span>
+        </p>
+    </li>
+    <li>
+        Make a route for a post, put or a patch method<br>
+        (Here is a route for a post method with the path "/users"):<br>
+        <p class="codeblock">
+            <span class="aqua">app</span><span class="white">.</span><span class="beige">post</span><span class="white">(</span><span class="red">"/users"</span><span class="white">,</span>
+                <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
+                <span class="sky">res</span><span class="white">)</span>
+                <span class="blue">=></span> <span class="white">{</span><br><br>
+            <span class="white">});</span>
+        </p>
+    </li>
+    <li>
+        The request body will be an object in the "body" property of the request object<br>
+        (Here the variable "body" is initialized to the body object):<br>
+        <p class="codeblock">
+            <span class="aqua">app</span><span class="white">.</span><span class="beige">post</span><span class="white">(</span><span class="red">"/users"</span><span class="white">,</span>
+                <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
+                <span class="sky">res</span><span class="white">)</span>
+                <span class="blue">=></span> <span class="white">{</span><br>
+            &nbsp;&nbsp;&nbsp;
+                <span class="blue">const</span> <span class="aqua">body</span> <span class="white">=</span>
+                <span class="sky">req</span><span class="white">.</span><span class="sky">body</span><span class="white">;</span><br>
+            <span class="white">});</span>
+        </p>
+    </li>
+</ol>
+*JSON = JavaScript Object Notation

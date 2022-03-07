@@ -1,0 +1,27 @@
+<h1>Express - Server Side Rendering</h1>
+<p>
+    Server side rendering is when a page is rendred on the server, before it is sent to the client.<br>
+    The pages can pontentially be dynamically rendered, meaning they will can have different content every time they are sent to a client.<br>
+</p><br>
+This guide will show different ways to render a page on the server.<br>
+<h2>Load Files</h2>
+The examples below will show how to render pages by handling strings.<br>
+You can use the "fs" module to load the contents of files into strings.<br>
+Read more about that here: <a href="/file-system">File System</a>
+<h2>Concatenate Content</h2>
+You can render a page by concatenating content like this<br>
+(Here the frontpage is rendered by concatenating: a header, the frontpage content "frontpageContent" and a footer):<br>
+<p class="codeblock">
+    <span class="blue">const</span> <span class="aqua">frontpage</span> <span class="white">=</span>
+    <span class="aqua">header</span> <span class="white">+</span>
+    <span class="aqua">frontpageContent</span> <span class="white">+</span>
+    <span class="aqua">footer</span><span class="white">;</span>
+</p>
+<h2>Replace Keywords</h2>
+You can also render a page by replacing a keyword like this<br>
+(Here the frontpage is rendered by replacing the keyword "%%NAVBAR%%" with the navbar content in the frontpageTemplate):<br>
+<p class="codeblock">
+    <span class="blue">const</span> <span class="aqua">frontpage</span> <span class="white">=</span>
+    <span class="aqua">frontpageTemplate</span><span class="white">.</span><span class="beige">replace</span><span class="white">(</span><span class="red">"%%NAVBAR%%"</span><span class="white">,</span>
+    <span class="aqua">navbar</span><span class="white">);</span>
+</p>

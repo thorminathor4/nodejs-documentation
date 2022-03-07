@@ -1,0 +1,18 @@
+ul{
+    margin-top: 0;
+}
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+table{
+    border-spacing: 0;
+}
+th, td{
+    padding: 5px;
+}
+th{
+    text-align: left;
+    background-color: #55AA55;
+    color: #202020;
+}

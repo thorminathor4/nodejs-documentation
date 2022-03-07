@@ -1,0 +1,8 @@
+a {
+    color: #55AA55;
+}
+.missing{
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+}

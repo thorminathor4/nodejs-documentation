@@ -1,0 +1,11 @@
+<h1>Express - Server Side Redirection</h1>
+<p>
+    You can redirect an HTTP response from a route to another endpoint with on express server.<br>
+    To see how to make an express server, go to one of this guide: <a href="/create-a-server">Create a Server</a>.<br>
+    See how to make routes here: <a href="/create-a-route">Create a Route</a>.
+</p><br>
+To redirect a response, use the redirect method on the respone object and give it the emdpoint/path to redirect to as a string<br>
+(This this will redirect the response from the route that recieves a get request on the root path to the path "/frontpage"):<br>
+<p class="codeblock">
+    <span class="sky">res</span><span class="white">.</span><span class="beige">redirect</span><span class="white">(</span><span class="red">"/frontpage"</span><span class="white">);</span>
+</p>

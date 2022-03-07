@@ -1,0 +1,75 @@
+<div class="top">
+    <img src="/node-logo.png" width="50px"/>
+    <h1 class="page-title">Node.js vs A Browser</h1>
+</div>
+<p>
+    Node.js and a browser are both able to execute JavaScript, which makes them have several things in common.<br>
+    They are of course not the same and here will be covered some differences between Node.js and a browser.<br>
+</p>
+
+<h2>JavaScript Runtime Enviornment</h2>
+Node.js IS a JavaScript Runtime Enviornment and a browser HAS a JavaScript Runtime Enviornment.<br>
+Each browser can have its own JavaScript Runtime Enviornment.<br>
+<br>
+Most JavaScript Runtime Enviornments have the following:
+<ul>
+    <li>A JavaScript Engine</li>
+    <li>A Callback Queue</li>
+    <li>An Event Loop</li>
+    <li>API's</li>
+</ul>
+Node.js and all of the most popular browsers have all of theese four elements.<br>
+The implementation of each element is different between the enviornments.<br>
+
+<h2>JavaScript Engine</h2>
+Here are some engines of the some of the most popular browsers:
+<ul>
+    <li>V8 (Google Chrome & Microsoft Edge)</li>
+    <li>JavaScriptCore (Apple Safari)</li>
+    <li>SpiderMonkey (Mozilla Firefox)</li>
+    <li>Carakan (Opera)</li>
+    <li>Chakra (Microsoft Internet Explorer)</li>
+</ul>
+Node.js uses the V8 engine.<br>
+<br>
+All JavaScript engines have these two elements:
+<ul>
+    <li>The Call Stack</li>
+    <li>The Memmory Heap</li>
+</ul>
+The JavaScript engines only run one thread of execution.
+
+<h2>The Callback Queue</h2>
+This holds callbacks to asyncronous operations.<br>
+Callbacks are added to the callback queue by using API's.<br>
+
+<h2>The Event Loop</h2>
+Continually checks if the call stack is empty.<br>
+If the call stack is empty, it can push a function from the callback queue on to the call stack.
+
+<h2>API's</h2>
+Node.js and the most popular browsers have some API's in common, but they are implemented differently.<br>
+<br>
+Here are some API's they have in common:
+<ul>
+    <li>The setTimeout and clearTimeout functions</li>
+    <li>The setInterval and clearClearInterval functions</li>
+</ul>
+<br><br>
+Here are some of the API's they dont have in common:
+<h3>Node.js</h3>
+<ul>
+    <li>The global object</li>
+    <li>The require object</li>
+    <li>I/O API's</li>
+    ...
+</ul>
+<h3>A Browser</h3>
+<ul>
+    <li>The DOM (Document Object Model)</li>
+    <li>The window object</li>
+    <li>The location object</li>
+    <li>The fetch API</li>
+    <li>Web API's</li>
+    ...
+</ul>

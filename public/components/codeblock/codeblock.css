@@ -1,0 +1,46 @@
+@font-face {
+    font-family: consolas;
+    src: url("/consolas.ttf");
+}
+@media only screen and (orientation: portrait) {
+    .codeblock{
+        font-size: xx-large;
+    }
+}
+.codeblock{
+    margin: 2px;
+    font-family: consolas;
+    padding: 5px;
+    background-color: #111;
+    display: inline-block;
+}
+.blue{
+    color: #569CD6;
+}
+.aqua{
+    color: #4FC1FF;
+}
+.green{
+    color: #4EC9B0;
+}
+.red{
+    color: #CE9178;
+}
+.beige{
+    color: #DCDCAA;
+}
+.white{
+    color: #D4D4D4;
+}
+.yellow{
+    color: #FF0;
+}
+.gray{
+    color: #888;
+}
+.army{
+    color: #B5CEA8;
+}
+.sky{
+    color: #9CDCFE;
+}

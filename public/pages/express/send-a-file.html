@@ -1,0 +1,22 @@
+<h1>Express - Send a File</h1>
+<p>
+    This is a guide on how to send files on a route on an express server.<br>
+    To see how to make an express server, go to this guide: <a href="/create-a-server">Create a Server</a>.<br>
+    To see how to make a route, go to this guide: <a href="/create-a-route">Create a Route</a>.<br>
+</p>
+<ol>
+    <li>
+        Use the sendFile method on the response object:<br>
+        <p class="codeblock">
+            <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">(</span><span class="red">"/"</span><span class="white">,</span>
+                <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
+                <span class="sky">res</span><span class="white">)</span>
+                <span class="blue">=></span> <span class="white">{</span><br>
+            &nbsp;&nbsp;&nbsp;
+                <span class="sky">res</span><span class="white">.</span><span class="beige">sendFile</span><span class="white">(</span><span class="sky">__dirname</span>
+                <span class="white">+</span>
+                <span class="red">"/public/index.html"</span><span class="white">);</span><br>
+            <span class="white">});</span>
+        </p>
+    </li>
+</ol>

@@ -1,0 +1,83 @@
+<div class="top">
+    <img src="/node-logo.png" width="50px"/>
+    <img src="/npm-logo.png" width="100px"/>
+    <h1 class="page-title">NPM & Projects</h1>
+</div>
+<p>
+    NPM is the Node Package Manager and is included in the installation of Node.js.<br>
+    NPM is used for developing Node.js projects.<br>
+</p><br>
+Here are some things you can de with NPM:
+<h3>Check The NPM Version</h3>
+You can check which version of NPM you have with this command:<br>
+<p class="codeblock">
+    <span class="yellow">npm</span>
+    <span class="gray">-v</span>
+</p><br>
+<h3>Initialize a Project</h3>
+You can make a new project inside a folder with this command:<br>
+<p class="codeblock">
+    <span class="yellow">npm</span> init
+</p><br>
+When a project is initialized, it will have a file named "package.json".<br>
+This file will have info about and ressources for the project.<br>
+
+<h3>Install a Module</h3>
+You can install a module for a project and save it with the following command<br>
+(A project will be initialized if not alredy initialized, when you install a module)<br>
+(This command will install the "express" module. Replace "express" with an other module name, to install that module):<br>
+<p class="codeblock">
+    <span class="yellow">npm</span> i express <span class="gray">--save</span>
+</p><br>
+When you install a module, it will be added as one of the project's dependencies.<br>
+See how to import modules here:
+<a href="/importing-exporting-modules">Importing & Exporting Modules</a>.<br>
+To see how to make an express server, go to this guide: <a href="/create-a-server">Create a Server</a>.<br>
+
+<h3>Install All Dependecies</h3>
+If you are inside a project folder, you can install every dependency it has at once with this command:<br>
+<p class="codeblock">
+    <span class="yellow">npm</span> i
+</p><br>
+<h3>Run Scripts</h3>
+You can also make scripts in the package that you can run.<br>
+<br>
+Here is a guide on how to make and run a script:
+<ol>
+    <li>
+        Open "package.json" and set the "scripts" property to an empty object, if the "scripts" property is not already there<br>
+        ("..." is where the other properties of the package can be):<br>
+        <p class="codeblock">
+            <span class="white">{</span><br>
+            &nbsp;&nbsp;...<br>
+            &nbsp;&nbsp;<span class="sky">"scripts"</span><span class="white">:</span>
+                <span class="white">{</span><br>
+            <br>
+            &nbsp;&nbsp;<span class="white">}</span><br>
+            &nbsp;&nbsp;...<br>
+            <span class="white">}</span><br>
+        </p>
+    </li>
+    <li>
+        Make a new script by doing the following:
+        <ol>
+            <li>Making a property in the "scripts" object with the name of the script in the "scripts" object</li>
+            <li>Setting the value of it to a string that has the command, the script scould run</li>
+        </ol>
+        (Here the script "start" is added to the "scripts" object to run the command "node app.js"):<br>
+        <p class="codeblock">
+            <span class="sky">"scripts"</span><span class="white">:</span>
+                <span class="white">{</span><br>
+            &nbsp;&nbsp;<span class="sky">"start"</span><span class="white">:</span>
+            <span class="red">"node app.js"</span><br>
+            <span class="white">}</span>
+        </p>
+    </li>
+    <li>
+        Execute the script in the terminal with this command<br>
+        (Here the script "start" is executed):<br>
+        <p class="codeblock">
+            <span class="yellow">npm</span> run start
+        </p>
+    </li>
+</ol>
