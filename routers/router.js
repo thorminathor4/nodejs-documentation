@@ -12,6 +12,7 @@ router.get('/importing-exporting-modules', (req, res) => res.send(nodeJsPages.im
 router.get('/file-system', (req, res) => res.send(nodeJsPages.fileSystem));
 router.get('/npm-and-projects', (req, res) => res.send(nodeJsPages.npmAndProjects));
 router.get('/nodemon', (req, res) => res.send(nodeJsPages.nodemon));
+router.get('/use-environment-variables', (req, res) => res.send(nodeJsPages.useEnvironmentVariables));
 
 router.get('/variable-declaration', (req, res) => res.send(javascriptPages.variableDeclaration));
 router.get('/type-coercion', (req, res) => res.send(javascriptPages.typeCoercion));

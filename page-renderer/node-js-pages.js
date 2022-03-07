@@ -35,10 +35,17 @@ const nodemon = pageRenderer.renderPage(pageTemplate, {
     CONTENT: '/nodemon.html'
 });
 
+const useEnvironmentVariables = pageRenderer.renderPage(pageTemplate, {
+    TITLE: 'Use Environment Variables - Node.js',
+    STYLES: nodeJsStyles,
+    CONTENT: '/use-environment-variables.html'
+});
+
 module.exports = {
     basicsOfNodeJs,
     importingExportingModules,
     fileSystem,
     npmAndProjects,
-    nodemon
+    nodemon,
+    useEnvironmentVariables
 }

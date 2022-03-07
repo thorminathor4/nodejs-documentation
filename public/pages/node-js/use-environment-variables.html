@@ -1,0 +1,23 @@
+<div class="top">
+    <img src="/node-logo.png" width="50px"/>
+    <h1 class="page-title">Node.js - Use Environment Variables</h1>
+</div>
+<p>
+    You can use environment variables in Node.js.<br>
+    <br>
+    Here is how you can run a file with an environment variable set<br>
+    (Here the environment variable "PORT" is set to 3000 and the file "app.js" is executed):<br>
+    <p class="codeblock">
+        PORT=3000 node app.js
+    </p><br>
+    This only works on Mac though, but the "cross-env" module can "fix" that.<br>
+    Read more about the "cross-env" module here: <a class="missing">Cross Environment</a>.<br>
+    <br>
+    When you execute a file, the the environment variable(s) will be properties of the "env" object inside the "process" object.<br>
+    (Here the environment variable "PORT" is assigned to the variable "PORT"):<br>
+    <p class="codeblock">
+        <span class="blue">const</span> <span class="aqua">PORT</span>
+        <span class="white">=</span>
+        <span class="sky">process</span><span class="white">.</span><span class="sky">env</span><span class="white">.</span><span class="aqua">PORT</span><span class="white">;</span>
+    </p>
+</p>
