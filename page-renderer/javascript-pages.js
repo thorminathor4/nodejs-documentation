@@ -29,9 +29,16 @@ const destructuring = pageRenderer.renderPage(pageTemplate, {
     CONTENT: '/destructuring.html'
 });
 
+const incrementDecrement = pageRenderer.renderPage(pageTemplate, {
+    TITLE: 'Increment & Decrement Operator - Node.js',
+    STYLES: javascriptStyles,
+    CONTENT: '/increment-decrement.html'
+});
+
 module.exports = {
     variableDeclaration,
     typeCoercion,
     arrayManipulation,
-    destructuring
+    destructuring,
+    incrementDecrement
 }
