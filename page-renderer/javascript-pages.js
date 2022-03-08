@@ -35,10 +35,17 @@ const incrementDecrement = pageRenderer.renderPage(pageTemplate, {
     CONTENT: '/increment-decrement.html'
 });
 
+const spreadOperator = pageRenderer.renderPage(pageTemplate, {
+    TITLE: 'Spread Operator - Node.js',
+    STYLES: javascriptStyles,
+    CONTENT: '/spread-operator.html'
+});
+
 module.exports = {
     variableDeclaration,
     typeCoercion,
     arrayManipulation,
     destructuring,
-    incrementDecrement
+    incrementDecrement,
+    spreadOperator
 }

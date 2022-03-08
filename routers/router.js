@@ -20,6 +20,7 @@ router.get('/type-coercion', (req, res) => res.send(javascriptPages.typeCoercion
 router.get('/array-manipulation', (req, res) => res.send(javascriptPages.arrayManipulation));
 router.get('/destructuring', (req, res) => res.send(javascriptPages.destructuring));
 router.get('/increment-decrement', (req, res) => res.send(javascriptPages.incrementDecrement));
+router.get('/spread-operator', (req, res) => res.send(javascriptPages.spreadOperator));
 
 router.get('/create-a-server', (req, res) => res.send(expressPages.createAServer));
 router.get('/create-a-route', (req, res) => res.send(expressPages.createARoute));

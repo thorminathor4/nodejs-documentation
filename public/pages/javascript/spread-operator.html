@@ -1,0 +1,30 @@
+<div>
+    <img src="/javascript-logo.svg" width="50px">
+    <h1 class="page-title">JavaScript - Spread Operator</h1>
+</div>
+<p>
+    You can use the spread operator to spread the content of an array or object into another array or object.<br>
+    The notation is three dots (...) as a prefix to the array or object with the content you want to spread.<br>
+    It must be used inside a literal array or object expression.
+</p>
+<h3>Spread Array Content</h3>
+Here the elements of the array "fruits" is spread into a new array which the variable "fruitsCopy" gets initialized to:<br>
+<p class="codeblock">
+    <span class="blue">const</span> <span class="aqua">fruits</span> <span class="white">=</span>
+        <span class="white">[</span><span class="red">"apple"</span><span class="white">,</span>
+        <span class="red">"banana"</span><span class="wite">,</span>
+        <span class="red">"pineapple"</span><span class="white">];</span><br>
+        <span class="blue">const</span> <span class="aqua">fruitsCopy</span> <span class="white">=</span>
+        <span class="white">[...</span><span class="aqua">fruits</span><span class="white">];</span>
+</p>
+<h3>Spread Object Content</h3>
+Here the properties of the object "person" is spread into a new object which the variable "personCopy" gets initialized to:<br>
+<p class="codeblock">
+    <span class="blue">const</span> <span class="aqua">person</span> <span class="white">=</span>
+        <span class="white">{</span><span class="sky">name</span><span class="white">:</span>
+        <span class="red">"John"</span><span class="wite">,</span>
+        <span class="sky">age</span><span class="white">:</span>
+        <span class="army">22</span><span class="white">};</span><br>
+        <span class="blue">const</span> <span class="aqua">personCopy</span> <span class="white">=</span>
+        <span class="white">{...</span><span class="aqua">person</span><span class="white">};</span>
+</p>
