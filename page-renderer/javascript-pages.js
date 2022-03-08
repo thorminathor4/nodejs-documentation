@@ -17,10 +17,10 @@ const typeCoercion = pageRenderer.renderPage(pageTemplate, {
     CONTENT: '/type-coercion.html'
 });
 
-const functionalIteration = pageRenderer.renderPage(pageTemplate, {
-    TITLE: 'Functional Iteration - Node.js',
+const arrayManipulation = pageRenderer.renderPage(pageTemplate, {
+    TITLE: 'Array Manipulation - Node.js',
     STYLES: javascriptStyles,
-    CONTENT: '/functional-iteration.html'
+    CONTENT: '/array-manipulation.html'
 });
 
 const destructuring = pageRenderer.renderPage(pageTemplate, {
@@ -32,6 +32,6 @@ const destructuring = pageRenderer.renderPage(pageTemplate, {
 module.exports = {
     variableDeclaration,
     typeCoercion,
-    functionalIteration,
+    arrayManipulation,
     destructuring
 }

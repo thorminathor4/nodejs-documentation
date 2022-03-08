@@ -17,7 +17,7 @@ router.get('/cross-environment', (req, res) => res.send(nodeJsPages.crossEnviron
 
 router.get('/variable-declaration', (req, res) => res.send(javascriptPages.variableDeclaration));
 router.get('/type-coercion', (req, res) => res.send(javascriptPages.typeCoercion));
-router.get('/functional-iteration', (req, res) => res.send(javascriptPages.functionalIteration));
+router.get('/array-manipulation', (req, res) => res.send(javascriptPages.arrayManipulation));
 router.get('/destructuring', (req, res) => res.send(javascriptPages.destructuring));
 
 router.get('/create-a-server', (req, res) => res.send(expressPages.createAServer));
