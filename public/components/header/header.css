@@ -1,7 +1,7 @@
 .header-text{
     display: inline-block;
     vertical-align: top;
-    width: 60%;
+    width: fit-content;
     margin-left: 2%;
 }
 .title {
@@ -11,4 +11,7 @@
     color: #55AA55;
     text-decoration: none;
     cursor: pointer;
+}
+#size{
+    display: none;
 }

@@ -2,25 +2,17 @@
     font-family: consolas;
     src: url("/consolas.ttf");
 }
-h2{
+h1, h2, h3, p{
     margin-bottom: 0;
 }
 .code-header{
     font-family: consolas;
 }
-p{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-ul{
+h1, ul, .page-title{
     margin-top: 0;
 }
 .page-title{
     display: inline-block;
     margin-left: 1%;
-    vertical-align: top;
-    margin-bottom: 0;
-}
-h3{
-    margin-bottom: 0;
+    vertical-align: bottom;
 }
