@@ -5,6 +5,7 @@ nav{
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 1;
+    width: 100%;
 }
 .dropdown-button, .dropdown-content, .menu-item, .mobile-menu {
     cursor: pointer;
@@ -27,7 +28,7 @@ nav{
     position: relative;
     display: inline-block;
     text-decoration: none;
-    width: 19%;
+    width: 16%;
 }
 .mobile-menu{
     display: none;

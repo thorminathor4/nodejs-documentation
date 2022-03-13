@@ -37,7 +37,7 @@ body *{
 }
 .message{
     color: gray;
-    display: none;
+    display: inline;
 }
 h1{
     font-size: xx-large;
