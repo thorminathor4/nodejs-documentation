@@ -10,24 +10,20 @@
 <b>File-Path:</b><br>
 When you give a file-path in a string as parameter, you can import a module from a JavaScript file that exports a module:<br>
 (Here a router is imported from the file "router.js" in the directory "routers"):<br>
-<p class="codeblock">
-    <span class="blue">const</span>
-    <span class="aqua">router</span>
-    <span class="white">=</span>
-    <span class="beige">require</span><span class="white">(</span><span class="red">"./routers/router.js"</span><span class="white">);</span>
-</p><br>
+<code class="js">
+    <kw>const</kw> <v>router</v> = <func>require</func>(<string>"./routers/router.js"</string>);
+</code>
+<br>
 To see how to make a express router go to this guide: <a href="/router">Router</a>.<br>
 <br>
 <b>Module Name:</b><br>
 When you give a module name in a string as parameter, you can import a named module.<br>
 See how to install modules here: <a href="/npm-and-projects">NPM & Projects</a>.<br>
 (Here is how the "express" module can be imported):<br>
-<p class="codeblock">
-    <span class="blue">const</span>
-    <span class="aqua">express</span>
-    <span class="white">=</span>
-    <span class="beige">require</span><span class="white">(</span><span class="red">"express"</span><span class="white">);</span>
-</p><br>
+<code class="js">
+    <kw>const</kw> <v>express</v> = <func>require</func>(<string>"express"</string>);
+</code>
+<br>
 To see how to make an express server, go to this guide: <a href="/create-a-server">Create a Server</a>.<br>
 <br>
 When you have imported a module, it is typically an object with methods and possibly other properties.
@@ -36,15 +32,11 @@ When you have imported a module, it is typically an object with methods and poss
 <p>
 Modules can be exported, by using the exports property of the built in module object<br>
 (Here an object with a method called "getMessage" that returns "Hello World!" is exported):<br>
-<p class="codeblock">
-    <span class="green">module</span><span class="white">.</span><span class="green">exports</span>
-        <span class="white">=</span>
-        <span class="white">{</span><br>
-    &nbsp;&nbsp;&nbsp;
-        <span class="beige">getMessage</span><span class="white">: ()</span>
-        <span class="blue">=></span> <span class="red">"Hello World!"</span>
-        <br>
-    <span class="white">};</span>
-</p><br>
+<code class="js">
+    <mod>module</mod>.<mod>exports</mod> =  {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<func>getMessage</func>: () <kw>=></kw> <string>"Hello World!"</string><br>
+    };
+</code>
+<br>
 You can basically export anything, but it is good practice to export an object with methods and optionally other properties.<br>
 It is common to have methods in the exported object.

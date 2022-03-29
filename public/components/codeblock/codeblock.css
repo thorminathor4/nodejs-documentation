@@ -7,6 +7,13 @@
         font-size: xx-large;
     }
 }
+code{
+    display: inline-block;
+    margin: 2px;
+    padding: 5px;
+    background-color: #111;
+    font-size: large;
+}
 .codeblock{
     margin: 2px;
     font-family: consolas;
@@ -14,33 +21,28 @@
     background-color: #111;
     display: inline-block;
 }
-.blue{
-    color: #569CD6;
-}
-.aqua{
-    color: #4FC1FF;
-}
-.green{
-    color: #4EC9B0;
-}
-.red{
-    color: #CE9178;
-}
-.beige{
-    color: #DCDCAA;
-}
-.white{
-    color: #D4D4D4;
-}
-.yellow{
-    color: #FF0;
-}
-.gray{
-    color: #888;
-}
-.army{
-    color: #B5CEA8;
-}
-.sky{
-    color: #9CDCFE;
-}
+
+.yellow{ color: #FF0; }
+.gray{ color: #888; }
+
+.white{ color: #D4D4D4; }
+.blue{ color: #569CD6; }
+.beige{ color: #DCDCAA; }
+.aqua{ color: #4FC1FF; }
+.sky{ color: #9CDCFE; }
+.red{ color: #CE9178; }
+.green{ color: #4EC9B0; }
+
+.army{ color: #B5CEA8; }
+
+cmd{ color: #FF0; } /*commandline command*/
+arg{ color: #888; } /*commandline argument*/
+
+.js{ color: #D4D4D4; } /*standart JavaScript color*/
+kw{ color: #569CD6; } /*keyword*/
+func{ color: #DCDCAA; } /*function*/
+v{ color: #4FC1FF; } /*variable*/
+pro{ color: #9CDCFE; } /*property or parameter*/
+string{ color: #CE9178; }
+mod{ color: #4EC9B0; } /*module*/
+
