@@ -24,21 +24,21 @@ const sendAFile = pageRenderer.renderPage(pageTemplate, {
 });
 
 const usePathVariable = pageRenderer.renderPage(pageTemplate, {
-    TITLE: 'Use Path Variable - Node.js',
+    TITLE: 'Path Variable - Node.js',
     STYLES: expressStyles,
-    CONTENT: '/use-path-variable.html'
+    CONTENT: '/path-variable.html'
 });
 
 const useQueryString = pageRenderer.renderPage(pageTemplate, {
-    TITLE: 'Use Query String - Node.js',
+    TITLE: 'Query String - Node.js',
     STYLES: expressStyles,
-    CONTENT: '/use-query-string.html'
+    CONTENT: '/query-string.html'
 });
 
 const useRequestBody = pageRenderer.renderPage(pageTemplate, {
-    TITLE: 'Use Request Body - Node.js',
+    TITLE: 'Request Body - Node.js',
     STYLES: expressStyles,
-    CONTENT: '/use-request-body.html'
+    CONTENT: '/request-body.html'
 });
 
 const serverSideRendering = pageRenderer.renderPage(pageTemplate, {

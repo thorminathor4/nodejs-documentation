@@ -43,23 +43,24 @@ Here is the guide on, how to make a route:
         Send something in the response by using a method on the response object:<br>
         <ul>
             <li>
-                To see how to send a file (fx. a web-page aka. an HTML file), go to this guide:
-                <a href="/send-a-file">Send a File</a>.<br>
-            </li>
-            <li>
-                You can also send basically anything with the send method.<br>
-                You can send a String:<br>
+                To send a file, use the sendFile method on the response object and pass the file path as parameter<br>
+                (The global variable "__dirname" is the path (name) for the directory of the file executing the code):<br>
                 <p class="codeblock">
                     <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">(</span><span class="red">"/"</span><span class="white">,</span>
                         <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
                         <span class="sky">res</span><span class="white">)</span>
                         <span class="blue">=></span> <span class="white">{</span><br>
                     &nbsp;&nbsp;&nbsp;
-                    <span class="sky">res</span><span class="white">.</span><span class="beige">send</span><span class="white">(</span><span class="red">"Hello Express!"</span><span class="white">);</span><br>
+                        <span class="sky">res</span><span class="white">.</span><span class="beige">sendFile</span><span class="white">(</span><span class="sky">__dirname</span>
+                        <span class="white">+</span>
+                        <span class="red">"/public/index.html"</span><span class="white">);</span><br>
                     <span class="white">});</span>
                 </p>
-                <br>
-                You can also send an object:<br>
+            </li>
+            <br>
+            <li>
+                You can also use the send method to send the value of a variable.<br>
+                (Here an object is sent using the send method):<br>
                 <p class="codeblock">
                     <span class="aqua">app</span><span class="white">.</span><span class="beige">get</span><span class="white">(</span><span class="red">"/"</span><span class="white">,</span>
                         <span class="white">(</span><span class="sky">req</span><span class="white">,</span>
@@ -73,6 +74,8 @@ Here is the guide on, how to make a route:
                     <br>
                     <span class="white">});</span>
                 </p>
+                <br>
+                Objects will be converted to json format.
             </li>
         </ul>
     </li>
