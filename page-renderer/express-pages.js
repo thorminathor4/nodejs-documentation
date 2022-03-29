@@ -54,9 +54,9 @@ const router = pageRenderer.renderPage(pageTemplate, {
 });
 
 const serverSideRedirection = pageRenderer.renderPage(pageTemplate, {
-    TITLE: 'Server Side Redirection - Node.js',
+    TITLE: 'Redirection - Node.js',
     STYLES: expressStyles,
-    CONTENT: '/server-side-redirection.html'
+    CONTENT: '/redirection.html'
 });
 
 module.exports = {

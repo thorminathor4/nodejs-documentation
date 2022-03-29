@@ -30,7 +30,7 @@ router.get('/query-string', (req, res) => res.send(expressPages.useQueryString))
 router.get('/request-body', (req, res) => res.send(expressPages.useRequestBody));
 router.get('/server-side-rendering', (req, res) => res.send(expressPages.serverSideRendering));
 router.get('/router', (req, res) => res.send(expressPages.router));
-router.get('/server-side-redirection', (req, res) => res.send(expressPages.serverSideRedirection));
+router.get('/redirection', (req, res) => res.send(expressPages.serverSideRedirection));
 
 router.get('/REST-API', (req, res) => res.send(otherPages.REST_API));
 router.get('/node-vs-browser', (req, res) => res.send(otherPages.nodeVsBrowser));
