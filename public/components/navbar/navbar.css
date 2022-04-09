@@ -2,8 +2,6 @@ nav{
     margin-top: 2%;
     height: 48px;
     position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
     z-index: 1;
     width: 100%;
 }
@@ -12,7 +10,7 @@ nav{
     font-weight: bold;
 }
 .dropdown-button img, .menu-item img{
-    margin: 8px;
+    margin: 8px 0 0 8px;
 }
 .dropdown-button, .menu-item, .mobile-menu {
     color: white;
@@ -28,7 +26,7 @@ nav{
     position: relative;
     display: inline-block;
     text-decoration: none;
-    width: 13.5%;
+    width: fit-content;
 }
 .mobile-menu{
     display: none;
@@ -40,24 +38,30 @@ nav{
     margin: 0;
 }
 .menu-item-text, .dropdown-arrow{
-    position: absolute;
-    top: 50%;
+    position: relative;
+    /*top: 50%;*/
     width: fit-content;
+    margin: 15px 0;
+    display: inline-block;
+    vertical-align: top;
 }
 .menu-item-text{
+    margin: 15px 10px;
+}
+/*.menu-item-text{
     left: 50%;
     transform: translate(-50%,-50%);
-}
-.dropdown-arrow{
+}*/
+/*.dropdown-arrow{
     right: 16px;
     transform: translateY(-50%);
-}
+}*/
 .dropdown-content {
     margin: 0;
     display: none;
     position: absolute;
     background-color: #555;
-    width: 100%;
+    width: 250px;
     z-index: 2;
 }
 .dropdown-content a {
@@ -72,3 +76,9 @@ nav{
 .dropdown-menu:hover .dropdown-content { display: block; }
 .empty{color: grey;}
 .dropdown-content a.empty{color: grey;}
+.node-dropdown{width: 280px}
+.modules-dropdown{width: 180px}
+.js-dropdown{width: 240px}
+.express-dropdown{width: 220px}
+.svelte-dropdown{width: 170px}
+.databases-dropdown{width: 140px}
