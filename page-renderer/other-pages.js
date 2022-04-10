@@ -16,13 +16,23 @@ const REST_API = pageRenderer.renderPage(pageTemplate, {
 });
 
 const nodeVsBrowser = pageRenderer.renderPage(pageTemplate, {
-    TITLE: 'Node.js vs A Browser',
+    TITLE: 'Node.js vs A Browser - Node.js',
     STYLES: '/bonus/bonus-styles.html',
     CONTENT: '/bonus/node-vs-browser.html'
 });
 
+function notFound(pathVariables){
+
+    return pageRenderer.renderPage(pageTemplate, {
+        TITLE: 'Not Found - Node.js',
+        STYLES: '/bonus/bonus-styles.html',
+        CONTENT: '<h1>Nothing found on "' + pathVariables[0] + '"</h1>'
+    });
+}
+
 module.exports = {
     frontpage,
     REST_API,
-    nodeVsBrowser
+    nodeVsBrowser,
+    notFound
 }

@@ -35,4 +35,6 @@ router.get('/redirection', (req, res) => res.send(expressPages.serverSideRedirec
 router.get('/REST-API', (req, res) => res.send(otherPages.REST_API));
 router.get('/node-vs-browser', (req, res) => res.send(otherPages.nodeVsBrowser));
 
+router.get('*', (req, res) => res.send(otherPages.notFound(req.params)));
+
 module.exports = router;
